@@ -1,0 +1,15 @@
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/createAndRun/bin/Debug/net9.0/createAndRun
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/createAndRun/bin/Debug/net9.0/createAndRun.deps.json
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/createAndRun/bin/Debug/net9.0/createAndRun.runtimeconfig.json
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/createAndRun/bin/Debug/net9.0/createAndRun.dll
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/createAndRun/bin/Debug/net9.0/createAndRun.pdb
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/createAndRun/obj/Debug/net9.0/createAndRun.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/createAndRun/obj/Debug/net9.0/createAndRun.AssemblyInfoInputs.cache
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/createAndRun/obj/Debug/net9.0/createAndRun.AssemblyInfo.cs
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/createAndRun/obj/Debug/net9.0/createAndRun.csproj.CoreCompileInputs.cache
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/createAndRun/obj/Debug/net9.0/createAndRun.sourcelink.json
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/createAndRun/obj/Debug/net9.0/createAndRun.dll
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/createAndRun/obj/Debug/net9.0/refint/createAndRun.dll
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/createAndRun/obj/Debug/net9.0/createAndRun.pdb
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/createAndRun/obj/Debug/net9.0/createAndRun.genruntimeconfig.cache
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/createAndRun/obj/Debug/net9.0/ref/createAndRun.dll
