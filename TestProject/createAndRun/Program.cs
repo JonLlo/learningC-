@@ -60,6 +60,6 @@ else {
     Console.WriteLine("You lose");
 }
 /*booleans*/
-string bessage = "hello fox";
+string bessage = "hello fox!";
 bool besult = bessage.Contains('e');
 Console.WriteLine(besult);
