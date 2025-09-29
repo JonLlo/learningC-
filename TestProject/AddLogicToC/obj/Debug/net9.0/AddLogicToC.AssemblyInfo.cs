@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AddLogicToC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9d1ef2d860bafc0d168004b2dd583878021773a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b339f8858a7cbb74b0c7d3e28e7a7900ef5dcd8")]
 [assembly: System.Reflection.AssemblyProductAttribute("AddLogicToC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AddLogicToC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

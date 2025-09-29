@@ -56,9 +56,31 @@ else
 
 
 //2 Control Variable Scope and Logic Using Code Blocks in C#
-bool flag = true;
-if (flag)
+int[] numbers = { 4, 8, 15, 16, 23, 42 };
+bool found = false;
+int total = 0;
+
+foreach (int number in numbers)
 {
-    int value = 10;
-    Console.WriteLine($"Inside the code block: {value}");
+    
+
+    total += number;
+
+    if (number == 42)
+    {
+       found = true;
+
+    }
+
 }
+
+if (found) 
+{
+    Console.WriteLine("Set contains 42");
+
+}
+
+Console.WriteLine($"Total: {total}");
+
+//Branch the Flow of Code Using the switch-case Construct in C#
+
