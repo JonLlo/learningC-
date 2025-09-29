@@ -317,12 +317,13 @@ foreach (string name in studentNames)
             extra += score;
             sumAssignmentScores += score / 10;
     }
-
+    credit = extra / 50;
     extra = extra / (gradedAssignments - examAssignments);
+
 
     examScore = examScore / examAssignments;
 
-    overallGrade = (decimal)(sumAssignmentScores) / examAssignments;
+    overallGrade = examScore + credit;
 
     if (overallGrade >= 97)
         currentStudentLetterGrade = "A+";
