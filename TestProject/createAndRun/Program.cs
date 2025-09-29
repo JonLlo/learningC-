@@ -308,11 +308,19 @@ foreach (string name in studentNames)
         gradedAssignments += 1;
 
         if (gradedAssignments <= examAssignments)
+        {
             sumAssignmentScores += score;
+            examScore += score;
+        }
 
         else
+            extra += score;
             sumAssignmentScores += score / 10;
     }
+
+    extra = extra / (gradedAssignments - examAssignments);
+
+    examScore = examScore / examAssignments;
 
     overallGrade = (decimal)(sumAssignmentScores) / examAssignments;
 
