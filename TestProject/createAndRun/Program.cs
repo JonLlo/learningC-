@@ -247,6 +247,11 @@ This C# console application is designed to:
     Emma:           85.6    B
     Logan:          91.2    A-
 */
+
+/*
+
+//starts here
+
 int examAssignments = 5;
 
 string[] studentNames = new string[] { "Sophia", "Andrew", "Emma", "Logan" };
@@ -264,14 +269,7 @@ string currentStudentLetterGrade = "";
 Console.Clear();
 Console.WriteLine("Student\t\tExam Score\tOverall Grade\tExtra Credit\n");
 
-/*
-The outer foreach loop is used to:
-- iterate through student names 
-- assign a student's grades to the studentScores array
-- sum assignment scores (inner foreach loop)
-- calculate numeric and letter grade
-- write the score report information
-*/
+
 foreach (string name in studentNames)
 {
     string currentStudent = name;
@@ -299,10 +297,7 @@ foreach (string name in studentNames)
 
     int gradedAssignments = 0;
 
-    /* 
-    the inner foreach loop sums assignment scores
-    extra credit assignments are worth 10% of an exam score
-    */
+ 
     foreach (int score in studentScores)
     {
         gradedAssignments += 1;
@@ -373,3 +368,8 @@ foreach (string name in studentNames)
 // required for running in VS Code (keeps the Output windows open to view results)
 Console.WriteLine("\n\rPress the Enter key to continue");
 Console.ReadLine();
+
+
+*/
+
+//ends here
