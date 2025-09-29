@@ -1,0 +1,15 @@
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/bin/Debug/net9.0/AddLogicToC
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/bin/Debug/net9.0/AddLogicToC.deps.json
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/bin/Debug/net9.0/AddLogicToC.runtimeconfig.json
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/bin/Debug/net9.0/AddLogicToC.dll
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/bin/Debug/net9.0/AddLogicToC.pdb
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/obj/Debug/net9.0/AddLogicToC.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/obj/Debug/net9.0/AddLogicToC.AssemblyInfoInputs.cache
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/obj/Debug/net9.0/AddLogicToC.AssemblyInfo.cs
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/obj/Debug/net9.0/AddLogicToC.csproj.CoreCompileInputs.cache
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/obj/Debug/net9.0/AddLogicToC.sourcelink.json
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/obj/Debug/net9.0/AddLogicToC.dll
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/obj/Debug/net9.0/refint/AddLogicToC.dll
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/obj/Debug/net9.0/AddLogicToC.pdb
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/obj/Debug/net9.0/AddLogicToC.genruntimeconfig.cache
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/obj/Debug/net9.0/ref/AddLogicToC.dll
