@@ -33,4 +33,32 @@ Console.WriteLine($"Discount: {(saleAmount > 1000 ? 100 : 50)}");
 
 
 Random coin = new Random() ;
-int roll1 = dice.Next();    
+Console.WriteLine(coin.Next(0,2) == 1 ? "heads" : "tails");
+
+
+//Decision logic challenge
+string permission = "Admin";
+int level = 55;
+if (permission.Contains("Admin"))
+{
+    Console.WriteLine(level > 55 ? "Welcome, Super Admin user." : "Welcome, Admin User.");
+
+}
+else if (permission.Contains("Manager"))
+{
+    Console.WriteLine(level >= 20 ? "Contact an admin for access." : "You do not have sufficient privileges");
+
+}
+else
+{
+    Console.WriteLine("You do not have sufficient privileges");
+}
+
+
+//2 Control Variable Scope and Logic Using Code Blocks in C#
+bool flag = true;
+if (flag)
+{
+    int value = 10;
+    Console.WriteLine($"Inside the code block: {value}");
+}
