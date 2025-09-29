@@ -210,3 +210,10 @@ foreach (string name in studentNames)
 
     Console.WriteLine($"{currentStudent}\t\t{currentStudentGrade}\t?");
 }
+
+
+/* 7.
+Challenge Project - Develop foreach and if-elseif-else
+Structures to Process Array Data in C#
+*/
+
