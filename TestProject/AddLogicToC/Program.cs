@@ -32,8 +32,8 @@ Console.WriteLine($"Discount: {(saleAmount > 1000 ? 100 : 50)}");
 //Code challenge: write code to display the result of a coin flip
 
 
-Random coin = new Random() ;
-Console.WriteLine(coin.Next(0,2) == 1 ? "heads" : "tails");
+Random coin = new Random();
+Console.WriteLine(coin.Next(0, 2) == 1 ? "heads" : "tails");
 
 
 //Decision logic challenge
@@ -62,19 +62,19 @@ int total = 0;
 
 foreach (int number in numbers)
 {
-    
+
 
     total += number;
 
     if (number == 42)
     {
-       found = true;
+        found = true;
 
     }
 
 }
 
-if (found) 
+if (found)
 {
     Console.WriteLine("Set contains 42");
 
@@ -261,15 +261,15 @@ do
     ; //continue just takes you out this part* of the loop but carries on
     if (heroHealth <= 0) continue;
 
-        heroAttack = r.Next(1, 11);
-        monsterHealth = monsterHealth - heroAttack;
+    heroAttack = r.Next(1, 11);
+    monsterHealth = monsterHealth - heroAttack;
 
 
 
-        Console.WriteLine($"Monster was damaged and lost {heroAttack} health and now has {monsterHealth} health");
+    Console.WriteLine($"Monster was damaged and lost {heroAttack} health and now has {monsterHealth} health");
 
 
-    
+
 } while (heroHealth > 0 && monsterHealth > 0);
 
 if (heroHealth <= 0)
@@ -430,7 +430,7 @@ for (int i = 0; i < stringsCount; i++)
 
         Console.WriteLine(mySentence);
     }
- 
+
     mySentence = myString.Trim();
     Console.WriteLine(mySentence);
 }
@@ -521,29 +521,34 @@ for (int i = 0; i < maxPets; i++)
 }
 
 // display the top-level menu options
-
-Console.Clear();
-
-Console.WriteLine("Welcome to the Contoso PetFriends app. Your main menu options are:");
-Console.WriteLine(" 1. List all of our current pet information");
-Console.WriteLine(" 2. Add a new animal friend to the ourAnimals array");
-Console.WriteLine(" 3. Ensure animal ages and physical descriptions are complete");
-Console.WriteLine(" 4. Ensure animal nicknames and personality descriptions are complete");
-Console.WriteLine(" 5. Edit an animal’s age");
-Console.WriteLine(" 6. Edit an animal’s personality description");
-Console.WriteLine(" 7. Display all cats with a specified characteristic");
-Console.WriteLine(" 8. Display all dogs with a specified characteristic");
-Console.WriteLine();
-Console.WriteLine("Enter your selection number (or type Exit to exit the program)");
-
-readResult = Console.ReadLine();
-if (readResult != null)
+do
 {
-    menuSelection = readResult.ToLower();
-}
 
-Console.WriteLine($"You selected menu option {menuSelection}.");
-Console.WriteLine("Press the Enter key to continue");
+    Console.WriteLine("Welcome to the Contoso PetFriends app. Your main menu options are:");
+    Console.WriteLine(" 1. List all of our current pet information");
+    Console.WriteLine(" 2. Add a new animal friend to the ourAnimals array");
+    Console.WriteLine(" 3. Ensure animal ages and physical descriptions are complete");
+    Console.WriteLine(" 4. Ensure animal nicknames and personality descriptions are complete");
+    Console.WriteLine(" 5. Edit an animal’s age");
+    Console.WriteLine(" 6. Edit an animal’s personality description");
+    Console.WriteLine(" 7. Display all cats with a specified characteristic");
+    Console.WriteLine(" 8. Display all dogs with a specified characteristic");
+    Console.WriteLine();
+    Console.WriteLine("Enter your selection number (or type Exit to exit the program)");
 
-// pause code execution
-readResult = Console.ReadLine();
+    readResult = Console.ReadLine();
+    if (readResult != null)
+    {
+        menuSelection = readResult.ToLower();
+    }
+
+    Console.WriteLine($"You selected menu option {menuSelection}.");
+    Console.WriteLine("Press the Enter key to continue");
+
+    // pause code execution
+    readResult = Console.ReadLine();
+
+    // pause code execution
+    readResult = Console.ReadLine();
+
+} while (menuSelection != "exit");
