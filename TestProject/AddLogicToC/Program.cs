@@ -297,6 +297,7 @@ if (false) {
 //Exercise - Complete a challenge activity to differentiate between do and while iteration statements
 
 //example:
+/*
 string? readResult;
 bool validEntry = false;
 Console.WriteLine("Enter a string containing at least three characters:");
@@ -315,8 +316,8 @@ do
         }
     }
 } while (validEntry == false);
-
-
+*/
+/*
 
 //Note - the below 2 examples allow you to check if something is a string or int or something and return true if so......
                     // capture user input in a string variable named readResult example 1:
@@ -344,9 +345,9 @@ do
                     Console.WriteLine(numericValue2); // 0
 
 
+*/
 
-
-
+/*
 //Code project 1 - write code that validates integer input
 
 string? readResponse;
@@ -369,9 +370,10 @@ do
     }
 } while (!entry);
 Console.WriteLine($"You entered a valid number. Namely, {readValue}");
-
+/*
+*/
 //Code project 2 - write code that validates string input
-
+/*
 string? readResponse2;
 bool entry2 = false;
 
@@ -394,7 +396,52 @@ do
     }  while (!entry2);
 
 Console.WriteLine($"Your input ({readResponse2}) has been accepted");
-
+*/
 //Code project 3 - Write code that processes the contents of a string array
 
 string[] myStrings = new string[2] { "I like pizza. I like roast chicken. I like salad", "I like all three of the menu choices" };
+int stringsCount = myStrings.Length;
+
+string myString = "";
+int periodLocation = 0;
+
+for (int i = 0; i < stringsCount; i++)
+{
+    myString = myStrings[i];
+    periodLocation = myString.IndexOf(".");
+
+    string mySentence;
+
+    // extract sentences from each string and display them one at a time
+    while (periodLocation != -1)
+    {
+
+        // first sentence is the string value to the left of the period location
+        mySentence = myString.Remove(periodLocation);
+
+        // the remainder of myString is the string value to the right of the location
+        myString = myString.Substring(periodLocation + 1);
+
+        // remove any leading white-space from myString
+        myString = myString.TrimStart();
+
+        // update the comma location and increment the counter
+        periodLocation = myString.IndexOf(".");
+
+        Console.WriteLine(mySentence);
+    }
+ 
+    mySentence = myString.Trim();
+    Console.WriteLine(mySentence);
+}
+
+
+
+///IndexOf → find the next split point
+
+//Remove → get the part before it
+
+//Substring → get the part after it
+
+//6:Guided Project - Develop Conditional Branching and Looping Structures in C#
+
