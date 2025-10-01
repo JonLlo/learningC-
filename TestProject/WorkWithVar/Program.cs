@@ -112,13 +112,15 @@ string result = first + second + yes;
 Console.WriteLine(result);
 //However can't convert string into integer!
 
-// note the below is a narrowing conversion
+
+//CASTING
+// note the below is a narrowing CASTING
 decimal myDecimal = 3.14m;
 Console.WriteLine($"decimal: {myDecimal}");
 
 int myInt = (int)myDecimal;
 Console.WriteLine($"int: {myInt}");
-//whereas the below is a widening conversion
+//whereas the below is a widening CASTING
 
 int jonInteger = 5;
 Console.WriteLine($"Int: {jonInteger}");
@@ -129,6 +131,8 @@ Console.WriteLine($"Dec: {jonDecimal}");
 
 
 //Performing Data Conversions
+//CONVERTING
+
 //Use ToString() to convert a number to a string
 int a = 5;
 int b = 7;
@@ -145,3 +149,85 @@ string value2 = "7";
 int res = Convert.ToInt32(value1) * Convert.ToInt32(value2);
 Console.WriteLine(res);
 
+//Compare casting and converting a decimal into an int
+int value = (int)1.5m; // casting truncates
+Console.WriteLine(value);
+
+int v2 = Convert.ToInt32(1.3m); // converting rounds 
+Console.WriteLine(v2);
+
+//Exercise - Examine the TryParse() method
+string value3 = "102";
+int result_3 = 0;
+if (int.TryParse(value3, out result_3))
+{
+   Console.WriteLine($"Measurement: {result_3}");
+}
+else
+{
+   Console.WriteLine("Unable to report the measurement.");
+}
+Console.WriteLine($"Measurement (w/ offset): {50 + result_3}");
+
+
+string input4 = "101.5";
+decimal decimal4 = 0;
+Console.WriteLine(decimal4);
+Console.WriteLine(decimal.TryParse(input4, out decimal4)); //This is Boolean as is true. also does the thing inside.
+Console.WriteLine(decimal4);
+
+/*Exercise - Complete a challenge to combine string array
+values as strings and as integers*/
+string[] values = {"12.3", "45", "ABC", "11", "DEF"};
+string myMessage = "";
+decimal total = 0;
+foreach (string myValue in values)
+{
+    if (decimal.TryParse(myValue, out decimal decimalValue))
+    {
+        total += decimalValue;
+
+    }
+    else
+    {
+        myMessage += myValue;
+    }
+}
+Console.WriteLine($"Message: {myMessage}");
+Console.WriteLine($"Total: {total}");
+
+
+/* Exercise - Complete a challenge to output math operations as
+ specific numbertypes */
+int thing1 = 11;
+decimal thing2 = 6.2m;
+float thing3 = 4.3f;
+
+// Your code here to set result1
+
+
+
+int result1 = Convert.ToInt32(thing1 / thing2);
+
+
+//Convert.ToInt32(1.3m)
+
+// Hint: You need to round the result to nearest integer (don't just truncate)
+Console.WriteLine($"Divide thing1 by thing2, display the result as an int: {result1}");
+
+// Your code here to set result2
+decimal result2 =  thing2 / (decimal) thing3;
+
+Console.WriteLine($"Divide thing2 by thing3, display the result as a decimal: {result2}");
+
+// Your code here to set result3
+//don't need the below because it gets implicitly converted:
+//float result3 =  thing3 / (float) thing1;
+//Can just have below instead:
+float result3 =  thing3 / thing1;
+
+
+
+
+
+Console.WriteLine($"Divide thing3 by thing1, display the result as a float: {result3}");
