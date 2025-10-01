@@ -1,0 +1,15 @@
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/WorkWithVar/bin/Debug/net9.0/WorkWithVar
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/WorkWithVar/bin/Debug/net9.0/WorkWithVar.deps.json
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/WorkWithVar/bin/Debug/net9.0/WorkWithVar.runtimeconfig.json
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/WorkWithVar/bin/Debug/net9.0/WorkWithVar.dll
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/WorkWithVar/bin/Debug/net9.0/WorkWithVar.pdb
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/WorkWithVar/obj/Debug/net9.0/WorkWithVar.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/WorkWithVar/obj/Debug/net9.0/WorkWithVar.AssemblyInfoInputs.cache
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/WorkWithVar/obj/Debug/net9.0/WorkWithVar.AssemblyInfo.cs
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/WorkWithVar/obj/Debug/net9.0/WorkWithVar.csproj.CoreCompileInputs.cache
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/WorkWithVar/obj/Debug/net9.0/WorkWithVar.sourcelink.json
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/WorkWithVar/obj/Debug/net9.0/WorkWithVar.dll
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/WorkWithVar/obj/Debug/net9.0/refint/WorkWithVar.dll
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/WorkWithVar/obj/Debug/net9.0/WorkWithVar.pdb
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/WorkWithVar/obj/Debug/net9.0/WorkWithVar.genruntimeconfig.cache
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/WorkWithVar/obj/Debug/net9.0/ref/WorkWithVar.dll
