@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
-//2 Discover value types and reference types
+//1 Discover value types and reference types
 //decimal to binary: 116 -> 01110100
 //text to binary: a = 97, b = 98, A = 65, B =66 -> same process
 //number of bits allow up to 2^n -1. e.g. 128 is 8 bits so allows 0-255
@@ -102,7 +102,7 @@ Console.WriteLine($"ref_B[0]: {ref_B[0]}");
 //ref_A and ref_B both point to the same array in memory.
 //like two remote controls pointing to the same TV:
 
-//3 Convert Data Types Using Casting and Conversion Techniques in C#
+//2 Convert Data Types Using Casting and Conversion Techniques in C#
 
 //note the below works as we can convert an integer and a bool into a string. 
 int first = 2;
@@ -231,3 +231,163 @@ float result3 =  thing3 / thing1;
 
 
 Console.WriteLine($"Divide thing3 by thing1, display the result as a float: {result3}");
+
+
+//3 Perform Operations on Arrays Using Helper Methods in C#
+
+//Sort, Reverse
+string[] pallets = [ "B14", "A11", "B12", "A13" ];
+
+Console.WriteLine("Sorted...");
+Array.Sort(pallets);
+foreach (var pallet in pallets)
+{
+    Console.WriteLine($"-- {pallet}");
+}
+
+Console.WriteLine("");
+Console.WriteLine("Reversed...");
+Array.Reverse(pallets);
+foreach (var pallet in pallets)
+{
+    Console.WriteLine($"-- {pallet}");
+}
+
+//Clear
+string[] slabs = [ "B14", "A11", "B12", "A13" ];
+Console.WriteLine("");
+
+Console.WriteLine($"Before: {slabs[0].ToLower()}");
+Array.Clear(slabs, 0, 2);
+
+if (slabs[0] == null) {
+    Console.WriteLine($"After: {slabs[0]}");
+
+
+    }
+else {
+    Console.WriteLine($"After: {slabs[0].ToLower()}");
+
+};
+
+Console.WriteLine($"Clearing 2 ... count: {slabs.Length}");
+foreach (var pallet in slabs)
+{
+    Console.WriteLine($"-- {pallet}");
+};
+
+
+//Resize
+Array.Resize(ref slabs, 7);
+slabs[5] = "C01";
+
+
+Console.WriteLine($"Clearing 2 ... count: {slabs.Length}");
+foreach (var pallet in slabs)
+{
+    Console.WriteLine($"-- {pallet}");
+};
+
+//split and join
+
+//Use the ToCharArray() to reverse a string 
+//Reverse, then combine the char array into a new string
+        string Value = "abc123";
+        char[] ValueArray = Value.ToCharArray();
+        Array.Reverse(ValueArray);
+        string Result = new string(ValueArray);
+        Console.WriteLine(Result);
+
+//Combine all of the chars into a new comma-separated-value string using Join()
+        string vAlue = "abc123";
+        char[] vAlueArray = vAlue.ToCharArray();
+        Array.Reverse(vAlueArray);
+        // string result = new string(valueArray);
+        string rEsult = String.Join(",", vAlueArray);
+        Console.WriteLine(rEsult);
+
+
+//Split() the comma-separated-value string into an array of strings
+        string vaLue = "abc123";
+        char[] vaLueArray = vaLue.ToCharArray();
+        Array.Reverse(vaLueArray);
+        // string result = new string(valueArray);
+        string reSult = String.Join(",", vaLueArray);
+        Console.WriteLine(reSult);
+
+        string[] items = reSult.Split(',');
+        foreach (string item in items)
+        {
+            Console.WriteLine(item);
+        }
+
+//Exercise - Complete a challenge to reverse words in a sentence
+string pangram = "The quick brown fox jumps over the lazy dog";
+string[] pItems = pangram.Split(' ');
+string[] revItemsArray = new string[pItems.Length];
+
+for (int i = 0; i < pItems.Length; i++)
+{
+    char[] chars = pItems[i].ToCharArray();
+    Array.Reverse(chars);
+    revItemsArray[i] = new string(chars);
+    Console.WriteLine(revItemsArray[i]); // prints each reversed word
+}
+
+string revResult = String.Join(" ", revItemsArray);
+Console.WriteLine(revResult); // prints the full sentence with reversed words
+
+//Exercise - Complete a challenge to parse a string of orders, sort the orders and tag possible errors
+
+
+/*the below was my first try, but realised I didn't actually need to convert the string items to character strings,
+as we werent changing them like before*/
+
+/*
+string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
+string[] orderItems = orderStream.Split(',');
+Array.Sort(orderItems);
+
+
+for (int i = 0; i < orderItems.Length; i++)
+{
+    char[] charz = orderItems[i].ToCharArray();
+        if (charz.Length == 4)
+    {
+        Console.WriteLine(orderItems[i]);
+    }
+    else
+    {
+        Console.WriteLine($"{orderItems[i]} \t \t - \t error");
+
+    }
+
+}
+*/
+
+//here is my second try (the answer)
+string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
+string[] orderItems = orderStream.Split(',');
+Array.Sort(orderItems);
+foreach (var item in orderItems)
+{
+    if (item.Length == 4)
+    {
+        Console.WriteLine($"{item}  \t\t\t - Error");
+    }
+    else {
+        Console.WriteLine($"{item}");
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
