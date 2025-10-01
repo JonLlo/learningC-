@@ -383,11 +383,123 @@ foreach (var item in orderItems)
 }
 
 
+//4 Format alphanumeric data for presentation in C#
+            //Exercise - Investigate string formatting basics
+
+string First = "Hello";
+string Second = "World";
+string Answer = string.Format("{0} {1}!", First, Second);
+Console.WriteLine(Answer);
+
+string fIrst = "Hello";
+string sEcond = "World";
+Console.WriteLine("{1} {0}!", fIrst, sEcond);
+Console.WriteLine("{0} {0} {0}!", fIrst, sEcond);
+
+
+string fiRst = "Hello";
+string seCond = "World";
+Console.WriteLine($"{fiRst} {seCond}!");
+Console.WriteLine($"{seCond} {fiRst}!");
+Console.WriteLine($"{fiRst} {fiRst} {fiRst}!");
+
+//formatting currency:
+decimal price = 123.45m;
+int discount = 50;
+Console.WriteLine($"Price: {price:C} (Save {discount:C})");
+//Formatting numbers
+decimal measurement = 123456.78912m;
+Console.WriteLine($"Measurement: {measurement:N} units");
+Console.WriteLine($"Measurement: {measurement:N4} units");
+//Formatting percentages
+decimal tax = .36785m;
+Console.WriteLine($"Tax rate: {tax:P2}");
+//Combining formatting approaches
+decimal Price = 67.55m;
+decimal SalePrice = 59.99m;
+
+string yourDiscount = String.Format("You saved {0:C2} off the regular {1:C2} price. ", (Price - SalePrice), Price);
+
+yourDiscount += $"A discount of {((Price - SalePrice)/Price):P2}!"; //inserted
+Console.WriteLine(yourDiscount);
+            //Exercise - Explore string interpolation
+
+
+int invoiceNumber = 1201;
+decimal productShares = 25.4568m;
+decimal subtotal = 2750.00m;
+decimal taxPercentage = .15825m;
+decimal Total = 3185.19m;
+
+Console.WriteLine($"Invoice Number: {invoiceNumber}");
+Console.WriteLine($"   Shares: {productShares:N3} Product");
+Console.WriteLine($"     Sub Total: {subtotal:C}");
+Console.WriteLine($"           Tax: {taxPercentage:P2}");
+Console.WriteLine($"     Total Billed: {Total:C}");
+//Next unit: Exercise - Discover padding and alignment
+//padding
+string input = "Pad this";
+Console.WriteLine(input.PadLeft(12));
+Console.WriteLine(input.PadRight(12));
+Console.WriteLine(input.PadLeft(12, '-'));
+Console.WriteLine(input.PadRight(12, '-'));
+//Working with padded strings:
+ string paymentId = "769C";
+ string payeeName = "Mr. Stephen Ortega";
+ string paymentAmount = "$5,000.00";
+
+ var formattedLine = paymentId.PadRight(4);
+ formattedLine += payeeName.PadRight(24);
+ formattedLine += paymentAmount.PadLeft(10);
+
+ Console.WriteLine("1234567890123456789012345678901234567890");
+ Console.WriteLine(formattedLine);
+
+//Exercise - Complete a challenge to apply string interpolation to a form letter
+string customerName = "Ms. Barros";
+
+string currentProduct = "Magic Yield";
+int currentShares = 2975000;
+decimal currentReturn = 0.1275m;
+decimal currentProfit = 55000000.0m;
+
+string newProduct = "Glorious Future";
+decimal newReturn = 0.13125m;
+decimal newProfit = 63000000.0m;
+
+// Your logic here
+
+Console.WriteLine("Here's a quick comparison:\n");
 
 
 
+// Your logic here
+
+
+Console.WriteLine($"Dear {customerName}, \n ");
+Console.WriteLine($"As a customer of our {currentProduct} offering we are excited to tell you about a new financial product that would dramatically increase your return \n");
+Console.WriteLine($"Currently, you own {currentShares:N2} shares at a return of {currentReturn:P2} \n");
+Console.WriteLine($"Our new product, Glorious Future offers a return of {newReturn:P2}.  Given your current volume, your potential profit would be {newProfit:C}. \n");
+Console.WriteLine("Here's a quick comparison: \n"); 
+
+string comparisonMessage = "";
+string comparisonMessage2 = "";
+
+
+comparisonMessage = currentProduct.PadRight(20);
+comparisonMessage += String.Format("{0:P}", currentReturn).PadRight(20);
+comparisonMessage += String.Format("{0:C}", currentProfit);
+
+comparisonMessage2 = newProduct.PadRight(20);
+comparisonMessage2 += String.Format("{0:P}", newReturn).PadRight(20);
+comparisonMessage2 += String.Format("{0:C}", newProfit);
+
+///////NOTE!!! The String.Format is being used here to format numbers (decimals) as percentages or currency, because PadRight() only works on strings. 
+
+
+Console.WriteLine(comparisonMessage);
+Console.WriteLine(comparisonMessage2);
 
 
 
-
-
+//5 Modify the Content of Strings Using Built-In String Data Type Methods in C#
