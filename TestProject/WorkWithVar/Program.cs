@@ -638,3 +638,61 @@ while (true)
     int length8 = closingPosition8 - openingPosition8;
     Console.WriteLine(message8.Substring(openingPosition8, length8));
 }
+
+//Exercise - Use the Remove() and Replace() methods
+//remove
+string data9 = "12345John Smith          5000  3  ";
+string updatedData9 = data9.Remove(5, 20);
+Console.WriteLine(updatedData9);
+//replace
+string message9 = "This--is--ex-amp-le--da-ta";
+message9 = message9.Replace("--", " ");
+message9 = message9.Replace("-", "");
+Console.WriteLine(message9);
+
+//Exercise - Complete a challenge to extract, replace, and remove data from an input string
+string inPut = "<div><h2>Widgets &trade;</h2><span>5000</span></div>";
+Console.WriteLine(inPut);
+
+//string quantity = "";
+
+string openSpan = "<span>";
+string closeSpan = "</span>";
+// Your work here
+//Quant
+int openSpanIndex = inPut.IndexOf(openSpan);
+int closeSpanIndex = inPut.IndexOf(closeSpan);
+Console.WriteLine(openSpanIndex);
+Console.WriteLine(closeSpanIndex);
+int len = closeSpanIndex - openSpanIndex - openSpan.Length;
+string Quant = inPut.Substring(openSpanIndex + openSpan.Length, len);
+Console.WriteLine($"Quantity: {Quant}");
+//Output
+
+inPut = inPut.Replace("trade", "reg");
+string openDiv = "<div>";
+string closeDiv = "</div>";
+int openDivIndex = inPut.IndexOf(openDiv);
+int closeDivIndex = inPut.IndexOf(closeDiv);
+int lenDiv = closeDivIndex - openDivIndex - openDiv.Length;
+string OutP = inPut.Substring(openDivIndex + openDiv.Length, lenDiv);
+Console.WriteLine($"Output: {OutP}");
+
+
+
+
+
+
+
+
+
+
+//string updatedData9 = data9.Remove(5, 20);
+
+
+
+
+
+
+//Output: <h2>Widgets &reg;</h2><span>5000</span>
+
