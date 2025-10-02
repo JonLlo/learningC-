@@ -424,5 +424,7 @@ void displayEmails(string firstName, string lastName, string Email = "@contoso.c
     firstName = firstName.Substring(0, 2).ToLower().Trim();
     lastName = lastName.ToLower().Trim();
     Console.WriteLine($"{firstName}{lastName}{Email}");
-    
+
 }
+
+//3. Create C# Methods that Return Values
