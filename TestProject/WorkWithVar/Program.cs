@@ -89,7 +89,7 @@ Console.WriteLine($"val_A: {val_A}");
 Console.WriteLine($"val_B: {val_B}");
 
 //Reference Type (array): In this example, ref_A and ref_B are array reference types.
-int[] ref_A= new int[1];
+int[] ref_A = new int[1];
 ref_A[0] = 2;
 int[] ref_B = ref_A;
 ref_B[0] = 5;
@@ -161,11 +161,11 @@ string value3 = "102";
 int result_3 = 0;
 if (int.TryParse(value3, out result_3))
 {
-   Console.WriteLine($"Measurement: {result_3}");
+    Console.WriteLine($"Measurement: {result_3}");
 }
 else
 {
-   Console.WriteLine("Unable to report the measurement.");
+    Console.WriteLine("Unable to report the measurement.");
 }
 Console.WriteLine($"Measurement (w/ offset): {50 + result_3}");
 
@@ -178,7 +178,7 @@ Console.WriteLine(decimal4);
 
 /*Exercise - Complete a challenge to combine string array
 values as strings and as integers*/
-string[] values = {"12.3", "45", "ABC", "11", "DEF"};
+string[] values = { "12.3", "45", "ABC", "11", "DEF" };
 string myMessage = "";
 decimal total = 0;
 foreach (string myValue in values)
@@ -216,7 +216,7 @@ int result1 = Convert.ToInt32(thing1 / thing2);
 Console.WriteLine($"Divide thing1 by thing2, display the result as an int: {result1}");
 
 // Your code here to set result2
-decimal result2 =  thing2 / (decimal) thing3;
+decimal result2 = thing2 / (decimal)thing3;
 
 Console.WriteLine($"Divide thing2 by thing3, display the result as a decimal: {result2}");
 
@@ -224,7 +224,7 @@ Console.WriteLine($"Divide thing2 by thing3, display the result as a decimal: {r
 //don't need the below because it gets implicitly converted:
 //float result3 =  thing3 / (float) thing1;
 //Can just have below instead:
-float result3 =  thing3 / thing1;
+float result3 = thing3 / thing1;
 
 
 
@@ -236,7 +236,7 @@ Console.WriteLine($"Divide thing3 by thing1, display the result as a float: {res
 //3 Perform Operations on Arrays Using Helper Methods in C#
 
 //Sort, Reverse
-string[] pallets = [ "B14", "A11", "B12", "A13" ];
+string[] pallets = ["B14", "A11", "B12", "A13"];
 
 Console.WriteLine("Sorted...");
 Array.Sort(pallets);
@@ -254,27 +254,31 @@ foreach (var pallet in pallets)
 }
 
 //Clear
-string[] slabs = [ "B14", "A11", "B12", "A13" ];
+string[] slabs = ["B14", "A11", "B12", "A13"];
 Console.WriteLine("");
 
 Console.WriteLine($"Before: {slabs[0].ToLower()}");
 Array.Clear(slabs, 0, 2);
 
-if (slabs[0] == null) {
+if (slabs[0] == null)
+{
     Console.WriteLine($"After: {slabs[0]}");
 
 
-    }
-else {
+}
+else
+{
     Console.WriteLine($"After: {slabs[0].ToLower()}");
 
-};
+}
+;
 
 Console.WriteLine($"Clearing 2 ... count: {slabs.Length}");
 foreach (var pallet in slabs)
 {
     Console.WriteLine($"-- {pallet}");
-};
+}
+;
 
 
 //Resize
@@ -286,40 +290,41 @@ Console.WriteLine($"Clearing 2 ... count: {slabs.Length}");
 foreach (var pallet in slabs)
 {
     Console.WriteLine($"-- {pallet}");
-};
+}
+;
 
 //split and join
 
 //Use the ToCharArray() to reverse a string 
 //Reverse, then combine the char array into a new string
-        string Value = "abc123";
-        char[] ValueArray = Value.ToCharArray();
-        Array.Reverse(ValueArray);
-        string Result = new string(ValueArray);
-        Console.WriteLine(Result);
+string Value = "abc123";
+char[] ValueArray = Value.ToCharArray();
+Array.Reverse(ValueArray);
+string Result = new string(ValueArray);
+Console.WriteLine(Result);
 
 //Combine all of the chars into a new comma-separated-value string using Join()
-        string vAlue = "abc123";
-        char[] vAlueArray = vAlue.ToCharArray();
-        Array.Reverse(vAlueArray);
-        // string result = new string(valueArray);
-        string rEsult = String.Join(",", vAlueArray);
-        Console.WriteLine(rEsult);
+string vAlue = "abc123";
+char[] vAlueArray = vAlue.ToCharArray();
+Array.Reverse(vAlueArray);
+// string result = new string(valueArray);
+string rEsult = String.Join(",", vAlueArray);
+Console.WriteLine(rEsult);
 
 
 //Split() the comma-separated-value string into an array of strings
-        string vaLue = "abc123";
-        char[] vaLueArray = vaLue.ToCharArray();
-        Array.Reverse(vaLueArray);
-        // string result = new string(valueArray);
-        string reSult = String.Join(",", vaLueArray);
-        Console.WriteLine(reSult);
+string vaLue = "abc123";
+char[] vaLueArray = vaLue.ToCharArray();
+Array.Reverse(vaLueArray);
+// string result = new string(valueArray);
+string reSult = String.Join(",", vaLueArray);
+Console.WriteLine(reSult);
 
-        string[] items = reSult.Split(',');
-        foreach (string item in items)
-        {
-            Console.WriteLine(item);
-        }
+string[] items = reSult.Split(',');
+foreach (string item in items)
+{
+    Console.WriteLine(item);
+}
 
 //Exercise - Complete a challenge to reverse words in a sentence
 string pangram = "The quick brown fox jumps over the lazy dog";
@@ -375,7 +380,8 @@ foreach (var item in orderItems)
     {
         Console.WriteLine($"{item}  \t\t\t - Error");
     }
-    else {
+    else
+    {
         Console.WriteLine($"{item}");
 
     }
@@ -384,7 +390,7 @@ foreach (var item in orderItems)
 
 
 //4 Format alphanumeric data for presentation in C#
-            //Exercise - Investigate string formatting basics
+//Exercise - Investigate string formatting basics
 
 string First = "Hello";
 string Second = "World";
@@ -420,9 +426,9 @@ decimal SalePrice = 59.99m;
 
 string yourDiscount = String.Format("You saved {0:C2} off the regular {1:C2} price. ", (Price - SalePrice), Price);
 
-yourDiscount += $"A discount of {((Price - SalePrice)/Price):P2}!"; //inserted
+yourDiscount += $"A discount of {((Price - SalePrice) / Price):P2}!"; //inserted
 Console.WriteLine(yourDiscount);
-            //Exercise - Explore string interpolation
+//Exercise - Explore string interpolation
 
 
 int invoiceNumber = 1201;
@@ -444,16 +450,16 @@ Console.WriteLine(input.PadRight(12));
 Console.WriteLine(input.PadLeft(12, '-'));
 Console.WriteLine(input.PadRight(12, '-'));
 //Working with padded strings:
- string paymentId = "769C";
- string payeeName = "Mr. Stephen Ortega";
- string paymentAmount = "$5,000.00";
+string paymentId = "769C";
+string payeeName = "Mr. Stephen Ortega";
+string paymentAmount = "$5,000.00";
 
- var formattedLine = paymentId.PadRight(4);
- formattedLine += payeeName.PadRight(24);
- formattedLine += paymentAmount.PadLeft(10);
+var formattedLine = paymentId.PadRight(4);
+formattedLine += payeeName.PadRight(24);
+formattedLine += paymentAmount.PadLeft(10);
 
- Console.WriteLine("1234567890123456789012345678901234567890");
- Console.WriteLine(formattedLine);
+Console.WriteLine("1234567890123456789012345678901234567890");
+Console.WriteLine(formattedLine);
 
 //Exercise - Complete a challenge to apply string interpolation to a form letter
 string customerName = "Ms. Barros";
@@ -480,7 +486,7 @@ Console.WriteLine($"Dear {customerName}, \n ");
 Console.WriteLine($"As a customer of our {currentProduct} offering we are excited to tell you about a new financial product that would dramatically increase your return \n");
 Console.WriteLine($"Currently, you own {currentShares:N2} shares at a return of {currentReturn:P2} \n");
 Console.WriteLine($"Our new product, Glorious Future offers a return of {newReturn:P2}.  Given your current volume, your potential profit would be {newProfit:C}. \n");
-Console.WriteLine("Here's a quick comparison: \n"); 
+Console.WriteLine("Here's a quick comparison: \n");
 
 string comparisonMessage = "";
 string comparisonMessage2 = "";
@@ -669,6 +675,7 @@ string Quant = inPut.Substring(openSpanIndex + openSpan.Length, len);
 Console.WriteLine($"Quantity: {Quant}");
 //Output
 
+
 inPut = inPut.Replace("trade", "reg");
 string openDiv = "<div>";
 string closeDiv = "</div>";
@@ -679,20 +686,163 @@ string OutP = inPut.Substring(openDivIndex + openDiv.Length, lenDiv);
 Console.WriteLine($"Output: {OutP}");
 
 
+/////////4 Guided Project - Work with Variable Data in C#
+
+// #1 the ourAnimals array will store the following: 
+string animalSpecies = "";
+string animalID = "";
+string animalAge = "";
+string animalPhysicalDescription = "";
+string animalPersonalityDescription = "";
+string animalNickname = "";
+string suggestedDonation = "";
 
 
+// #2 variables that support data entry
+int maxPets = 8;
+string? readResult;
+string menuSelection = "";
+decimal decimalDonation = 0.00m;
 
 
+// #3 array used to store runtime data, there is no persisted data
+string[,] ourAnimals = new string[maxPets, 7];
+
+// #4 create sample data ourAnimals array entries
+for (int i = 0; i < maxPets; i++)
+{
+    switch (i)
+    {
+        case 0:
+            animalSpecies = "dog";
+            animalID = "d1";
+            animalAge = "2";
+            animalPhysicalDescription = "medium sized cream colored female golden retriever weighing about 45 pounds. housebroken.";
+            animalPersonalityDescription = "loves to have her belly rubbed and likes to chase her tail. gives lots of kisses.";
+            animalNickname = "lola";
+            suggestedDonation = "85.00";
+            break;
+
+        case 1:
+            animalSpecies = "dog";
+            animalID = "d2";
+            animalAge = "9";
+            animalPhysicalDescription = "large reddish-brown male golden retriever weighing about 85 pounds. housebroken.";
+            animalPersonalityDescription = "loves to have his ears rubbed when he greets you at the door, or at any time! loves to lean-in and give doggy hugs.";
+            animalNickname = "gus";
+            suggestedDonation = "49.99";
+            break;
+
+        case 2:
+            animalSpecies = "cat";
+            animalID = "c3";
+            animalAge = "1";
+            animalPhysicalDescription = "small white female weighing about 8 pounds. litter box trained.";
+            animalPersonalityDescription = "friendly";
+            animalNickname = "snow";
+            suggestedDonation = "40.00";
+            break;
+
+        case 3:
+            animalSpecies = "cat";
+            animalID = "c4";
+            animalAge = "3";
+            animalPhysicalDescription = "Medium sized, long hair, yellow, female, about 10 pounds. Uses litter box.";
+            animalPersonalityDescription = "A people loving cat that likes to sit on your lap.";
+            animalNickname = "Lion";
+            suggestedDonation = "";
+            break;
+
+        default:
+            animalSpecies = "";
+            animalID = "";
+            animalAge = "";
+            animalPhysicalDescription = "";
+            animalPersonalityDescription = "";
+            animalNickname = "";
+            suggestedDonation = "";
+            break;
+
+    }
+
+    ourAnimals[i, 0] = "ID #: " + animalID;
+    ourAnimals[i, 1] = "Species: " + animalSpecies;
+    ourAnimals[i, 2] = "Age: " + animalAge;
+    ourAnimals[i, 3] = "Nickname: " + animalNickname;
+    ourAnimals[i, 4] = "Physical description: " + animalPhysicalDescription;
+    ourAnimals[i, 5] = "Personality: " + animalPersonalityDescription;
+    ourAnimals[i, 6] = "Suggested Donation: " + suggestedDonation;
 
 
+    if (!decimal.TryParse(suggestedDonation, out decimalDonation))
+    {
+        decimalDonation = 45.00m; // if suggestedDonation NOT a number, default to 45.00
+    }
+    ourAnimals[i, 6] = $"Suggested Donation: {decimalDonation:C2}";
 
 
-//string updatedData9 = data9.Remove(5, 20);
+}
 
+// #5 display the top-level menu options
+do
+{
+    // NOTE: the Console.Clear method is throwing an exception in debug sessions
+    Console.Clear();
 
+    Console.WriteLine("Welcome to the Contoso PetFriends app. Your main menu options are:");
+    Console.WriteLine(" 1. List all of our current pet information");
+    Console.WriteLine(" 2. Display all dogs with a specified characteristic");
+    Console.WriteLine();
+    Console.WriteLine("Enter your selection number (or type Exit to exit the program)");
 
+    readResult = Console.ReadLine();
+    if (readResult != null)
+    {
+        menuSelection = readResult.ToLower();
+    }
 
+    // use switch-case to process the selected menu option
+    switch (menuSelection)
+    {
+        case "1":
+            // list all pet info
+            for (int i = 0; i < maxPets; i++)
+            {
+                if (ourAnimals[i, 0] != "ID #: ")
+                {
+                    Console.WriteLine();
+                    for (int j = 0; j < 7; j++) // increased exit condition
+                    {
+                        Console.WriteLine(ourAnimals[i, j]);
+                    }
+                }
+            }
+            Console.WriteLine("\n\rPress the Enter key to continue");
+            readResult = Console.ReadLine();
 
+            break;
 
-//Output: <h2>Widgets &reg;</h2><span>5000</span>
+        case "2":
+            // Display all dogs with a specified characteristic
+            string dogCharacteristic = "";
+
+            while (dogCharacteristic == "")
+            {
+                // have the user enter physical characteristics to search for
+                Console.WriteLine($"\nEnter one desired dog characteristics to search for");
+                readResult = Console.ReadLine();
+                if (readResult != null)
+                {
+                    dogCharacteristic = readResult.ToLower().Trim();
+                }
+            }
+            
+            Console.WriteLine("Press the Enter key to continue.");
+            readResult = Console.ReadLine();
+            break;
+        default:
+            break;
+    }
+
+} while (menuSelection != "exit");
 
