@@ -1,0 +1,15 @@
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/CreateMethodsinC/bin/Debug/net9.0/CreateMethodsinC
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/CreateMethodsinC/bin/Debug/net9.0/CreateMethodsinC.deps.json
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/CreateMethodsinC/bin/Debug/net9.0/CreateMethodsinC.runtimeconfig.json
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/CreateMethodsinC/bin/Debug/net9.0/CreateMethodsinC.dll
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/CreateMethodsinC/bin/Debug/net9.0/CreateMethodsinC.pdb
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/CreateMethodsinC/obj/Debug/net9.0/CreateMethodsinC.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/CreateMethodsinC/obj/Debug/net9.0/CreateMethodsinC.AssemblyInfoInputs.cache
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/CreateMethodsinC/obj/Debug/net9.0/CreateMethodsinC.AssemblyInfo.cs
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/CreateMethodsinC/obj/Debug/net9.0/CreateMethodsinC.csproj.CoreCompileInputs.cache
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/CreateMethodsinC/obj/Debug/net9.0/CreateMethodsinC.sourcelink.json
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/CreateMethodsinC/obj/Debug/net9.0/CreateMethodsinC.dll
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/CreateMethodsinC/obj/Debug/net9.0/refint/CreateMethodsinC.dll
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/CreateMethodsinC/obj/Debug/net9.0/CreateMethodsinC.pdb
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/CreateMethodsinC/obj/Debug/net9.0/CreateMethodsinC.genruntimeconfig.cache
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/CreateMethodsinC/obj/Debug/net9.0/ref/CreateMethodsinC.dll
