@@ -726,3 +726,6 @@ do
 } while (menuSelection != "exit");
 
 //Exercise - Write code to read and save new ourAnimals array data -> do again later
+
+
+//7.Challenge Project - Develop Branching and Looping Structures in C#

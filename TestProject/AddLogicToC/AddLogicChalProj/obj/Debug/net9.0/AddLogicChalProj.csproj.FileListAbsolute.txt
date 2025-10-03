@@ -1,0 +1,15 @@
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/AddLogicChalProj/bin/Debug/net9.0/AddLogicChalProj
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/AddLogicChalProj/bin/Debug/net9.0/AddLogicChalProj.deps.json
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/AddLogicChalProj/bin/Debug/net9.0/AddLogicChalProj.runtimeconfig.json
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/AddLogicChalProj/bin/Debug/net9.0/AddLogicChalProj.dll
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/AddLogicChalProj/bin/Debug/net9.0/AddLogicChalProj.pdb
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/AddLogicChalProj/obj/Debug/net9.0/AddLogicChalProj.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/AddLogicChalProj/obj/Debug/net9.0/AddLogicChalProj.AssemblyInfoInputs.cache
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/AddLogicChalProj/obj/Debug/net9.0/AddLogicChalProj.AssemblyInfo.cs
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/AddLogicChalProj/obj/Debug/net9.0/AddLogicChalProj.csproj.CoreCompileInputs.cache
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/AddLogicChalProj/obj/Debug/net9.0/AddLogicChalProj.sourcelink.json
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/AddLogicChalProj/obj/Debug/net9.0/AddLogicChalProj.dll
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/AddLogicChalProj/obj/Debug/net9.0/refint/AddLogicChalProj.dll
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/AddLogicChalProj/obj/Debug/net9.0/AddLogicChalProj.pdb
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/AddLogicChalProj/obj/Debug/net9.0/AddLogicChalProj.genruntimeconfig.cache
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/AddLogicToC/AddLogicChalProj/obj/Debug/net9.0/ref/AddLogicChalProj.dll

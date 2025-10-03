@@ -571,7 +571,8 @@ int[,] TwoCoins(int[] coins, int target)
     }
     return (count == 0) ? new int[0, 0] : result;
 }
-//Exercise - Complete the challenge to add methods to make the game playable
+//Exercise - Complete the challenge to add methods to make the game playable! THIS IS A GOOD ONE!
+/*
 Random ran = new Random();
 
 Console.WriteLine("Would you like to play? (Y/N)");
@@ -621,3 +622,7 @@ string WinOrLose(int roll, int target)
     }
     return "You lose!";
 }
+*/
+
+//4 guided project - Plan a petting Zoo
+

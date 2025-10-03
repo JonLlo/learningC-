@@ -1,0 +1,30 @@
+alias dr='dotnet run'
+- shift/option/f tidies your code
+
+dotnet new console -n WorkWithVar
+
+
+To try again later:
+
+AddlogictoC:
+
+ //Code project 3 - Write code that processes the contents of a string array
+Need:
+    IndexOf(string)
+    Remove(int)
+    Substring(int)
+    TrimStart()
+
+//Add logicToC: 
+unit 6 of 8: Exercise - Write code to read and save new ourAnimals array data -> do again later
+Unit 7 of 8: Challenge Project - Develop Branching and Looping Structures in C#
+
+
+
+//WorkWithVar:
+Unit 7/8: Challenge Project - Work with Variable Data in C#
+
+//CreateMethodsInC
+////4 guided project - Plan a petting Zoo
+////5 challenge project - create a mini game
+
