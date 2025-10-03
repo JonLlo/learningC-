@@ -23,7 +23,7 @@ void PrintArray()
 }
 PrintArray();
 
-//Create a method to display random numbers:
+//.Create a method to display random numbers:
 void DisplayRandomNumbers()
 {
     Random random = new Random();
