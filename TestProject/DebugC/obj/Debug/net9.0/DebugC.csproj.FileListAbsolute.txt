@@ -1,0 +1,15 @@
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/DebugC/bin/Debug/net9.0/DebugC
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/DebugC/bin/Debug/net9.0/DebugC.deps.json
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/DebugC/bin/Debug/net9.0/DebugC.runtimeconfig.json
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/DebugC/bin/Debug/net9.0/DebugC.dll
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/DebugC/bin/Debug/net9.0/DebugC.pdb
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/DebugC/obj/Debug/net9.0/DebugC.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/DebugC/obj/Debug/net9.0/DebugC.AssemblyInfoInputs.cache
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/DebugC/obj/Debug/net9.0/DebugC.AssemblyInfo.cs
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/DebugC/obj/Debug/net9.0/DebugC.csproj.CoreCompileInputs.cache
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/DebugC/obj/Debug/net9.0/DebugC.sourcelink.json
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/DebugC/obj/Debug/net9.0/DebugC.dll
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/DebugC/obj/Debug/net9.0/refint/DebugC.dll
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/DebugC/obj/Debug/net9.0/DebugC.pdb
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/DebugC/obj/Debug/net9.0/DebugC.genruntimeconfig.cache
+/Users/jonnylloyd/coding/c#Course/CsharpProjects/TestProject/DebugC/obj/Debug/net9.0/ref/DebugC.dll
